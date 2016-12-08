@@ -1,0 +1,854 @@
+.page1, .page2 {
+    width: 100%;
+    height: auto;
+    /*height: 100%;*/
+    max-width: 640px;
+    overflow: hidden;
+    margin: 0 auto;
+
+
+}
+body,html{
+    font-family: 'SimSun';
+   
+
+
+}
+i{
+    font-style: normal;
+}
+.header{
+    width: 100%;
+    height: 40px;
+    padding: 5px 10px 0 10px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 10);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.headSe{
+    display: none;
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    /*padding: 10px;*/
+    padding-top: 5px;
+    /*padding-right: 5px;*/
+    background: rgba(0, 0, 0, 10);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.headSe{
+    z-index: 1000;
+
+}
+.header input,.headSe input {
+
+    width: 77%;
+    height: 30px;
+    border: 1px solid #999;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-left: 5px;
+    padding-left: 28px;
+
+}
+.headSe input{
+    margin-left: 10px;
+    float: left;
+
+}
+@media all and (min-width: 414px) {
+    .header input {
+        width: 82%;
+
+    }
+
+}
+.headSe .headIcon{
+
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 30px;
+    float: right;
+    margin-right: 8px;
+}
+.headSe .backSerch{
+    float: left;
+    display:inline-block;
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    line-height: 20px;
+    vertical-align: 5px;
+    background: url("../images/list/backarraw@2x.png") no-repeat center center ;
+    background-size:contain;
+}
+
+.header .logo {
+    background: url("../images/login/logonlog.png") no-repeat center center;
+    background-size: 100% 100%;
+    display: block;
+    height: 30px;
+    width: 30px;
+    float: left;
+}
+
+.header .search ,.headSe .searchSe{
+    background: url("../images/search02.png") no-repeat;
+    display: block;
+    margin-left: 2px;
+    width: 20px;
+    height: 20px;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 10px;
+    left: 48px;
+}
+.headSe .searchSe{
+    left: 35px;
+}
+
+.header .headerIcon {
+    float: right;
+    display: block;
+    height: 30px;
+    width: 30px;
+    background: url("../images/index/sys.png") no-repeat center;
+    background-size:contain;
+}
+
+.banner {
+    margin-top: 40px;
+    width: 100%;
+    height: 200px;
+}
+
+.banner img {
+    display: block;
+    width: 100%;
+    height: 180px;
+
+}
+
+.sider {
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 50px;
+}
+
+.sider .dot span {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 8px;
+    background: #e6e6e6;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.sider .dot {
+    position: absolute;
+    bottom: 22px;
+    width: 100%;
+}
+
+.sider .dot p {
+    width: 1002px;
+    margin: 0 auto;
+    padding-left: 22px;
+}
+
+.sider .dot span.cur {
+    background: #f5961a;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.tabWrap {
+    width: 100%;
+    height: auto;
+}
+
+ul.tabTitle {
+    width: 100%;
+    height: 35px;
+    font-size: 14px;
+    display: -webkit-box;
+    border-bottom: 1px solid #c7c8cc;
+}
+
+.tabTitle li {
+    width: 25%;
+    -webkit-box-flex: 1;
+    text-align: center;
+    line-height: 35px;
+    padding-bottom: 2px;
+
+}
+
+.activeLi span {
+
+    height: 25px;
+    display: inline-block;
+}
+
+.activeLi em {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("../images/sanjiao1@2x.png") no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    top: 4px;
+}
+
+.tabTitle .activeR span::before,.tabTitle .activeLs span::before{
+    content: "";
+    display: inline-block;
+    position: relative;
+    top: 1px;
+    /*left: 50%;*/
+    width:17px;
+    height:17px;
+    margin-right:5px;
+    background: url("../images/index1/auctionpic.png")     no-repeat center;
+    background-size: contain;
+}
+.tabTitle .activeLs span::before{
+    background: url("../images/index1/dealpic.png")     no-repeat center;
+    background-size: contain;
+    position: relative;
+    top: 3px;
+}
+.tabTitle li:first-child, .tabTitle li:nth-child(2) {
+    border-right: 1px solid #c7c8cc;
+
+}
+.tabTitle li.bgcolor{
+    background: #252831;
+    color: #d9a623;
+}
+.tabSelect {
+    border: none;
+    display: -webkit-box;
+    margin: 5px;
+    height: 28px;
+}
+
+.tabSelect :nth-child(1) {
+    /*background: #f4f4f4;*/
+    margin-right: 10px;
+    width: 50%;
+    text-align: center;
+    padding: 2px
+}
+
+.tabSelect :nth-child(2) {
+    /*background:#f4f4f4;*/
+    border: none;
+    width: 50%;
+    text-align: center;
+    color: #000;
+    padding: 2px;
+    /*padding-left: 10px;*/
+
+}
+
+.tabSelect .selectC {
+    color: #e8b122;
+    position: relative;
+
+}
+.tabSelect .selectC::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 70%;
+    left: 15%;
+    width: 70%;
+    height: 18px;
+    background: url("../images/index/tab2.png")     no-repeat ;
+    background-position:-2px -16px ;
+    background-size:100%;
+}
+
+.selectDl {
+    width: 100%;
+    padding: 5px 10px 5px 20px;
+    box-sizing: border-box;
+    /*overflow: hidden;*/
+    line-height: 28px;
+    position: relative;
+}
+.selectDl.change::before,.selectDl.timeing::before{
+    content: "";
+    display:inline-block;
+    position: relative;
+    float: right;
+    top:-6px;
+    right: -13px;
+    margin-right: 3px;
+    width: 55px;
+    height: 55px;
+
+    /*background-position:6px 3px ;*/
+
+
+}
+.selectDl.change::before{
+    background: url("../images/index1/timingPic.png")  no-repeat center;
+    background-size:contain;
+}
+.selectDl.timeing::before{
+    background: url("../images/index1/realtime.png")  no-repeat center;
+    background-size:contain;
+}
+
+
+.selectDl dt {
+    float: left;
+    margin-top: 3px;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.selectDl dt img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.selectDl dd {
+    /*float: left;*/
+    width: 100%;
+    line-height: 28px;
+    /*margin-left: 10px*/;
+    position: relative;
+}
+.selectDl dd .timeSlot::before {
+    content: "";
+    display:inline-block;
+    position: relative;
+    top:5px;
+   margin-right: 3px;
+    width:18px;
+    height: 18px;
+    background: url("../images/index1/time_over.png")  no-repeat center;
+    /*background-position:6px 3px ;*/
+    background-size:contain;
+}
+.selectDl dd h4{
+    font-size: 14px;
+    font-weight: 500;
+}
+.selectDl dd h3{
+    color: #72747c;
+    font-weight: 500;
+    font-size: 13px;
+}
+.selectDl dd p{
+    font-size: 14px;
+    color: #333333;
+}
+.selectDl dd .timeSlot{
+    color: #72747c;
+    font-size: 12px;
+}
+.selectDl dd .timeSlot b{
+    font-style: normal;
+    font-weight: 500;
+}
+.selectDl dd p span{
+    font-size: 12px;
+    color: #7b7d85;
+}
+.selectRight .selectDl dd :nth-child(2){
+    font-size: 12px;
+}
+.selectBtn {
+    padding: 2px 4px;
+    background: #e8b122;
+    position: absolute;
+    top: -1px;
+    right: -19px;
+    color: #fffffe;
+    border-radius: 2px;
+}
+
+.imgWra {
+    width: 100%;
+    overflow-x: scroll;
+    padding: 0 10px;
+    white-space: nowrap;
+
+}
+
+.imgbox{
+    display: block;
+    box-shadow:1px 1px 4px 1px #c0c0c0;
+    margin-left: 10px;
+    padding: 15px 0 13px 10px;
+    /*margin-right: 10px;*/
+    border-radius: 3px;
+    display: block;
+    width: 94%;
+    height: auto;
+    box-sizing: border-box;
+    border: 1px solid #c0c0c0;
+    margin-bottom: 25px;
+}
+.imgbox .time,.imgbox .status{
+
+    margin-top: 13px;
+    font-size: 14px;
+    /*margin-right: 10px;*/
+}
+.imgbox .status{
+    margin-right: 10px;
+    border-radius: 3px;
+    color: #FFFFFF;
+}
+.imgbox .time{
+    margin-top: 20px;
+    float: left;
+    color: #ccb299;
+}
+.imgbox .time em{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.imgbox .status{
+    float: right;
+    color: #FFFFFF;
+    background: #6accfa;
+    padding: 7px 20px;
+}
+@media all and (min-width: 320px) {
+    .imgbox .status{
+        float: right;
+        color: #FFFFFF;
+        background: #6accfa;
+        padding: 10px 8px;
+    }
+
+}
+.imgWrap{
+
+}
+.imgWrap{
+    width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.imgWrap li,.imgWra li {
+    width: 85px;
+    height: 85px;
+    display: inline-block;
+    margin-right: 5px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.imgWrap img,.imgWra img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.imgWra span {
+    width: 100%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #000;
+    opacity: .6;
+    color: #fff;
+    text-align: center;
+    /*margin-left: 6px;*/
+}
+.imgWrap span{
+    width: 100%;
+    display: block;
+    height: 15px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #000;
+    opacity: .6;
+    color: #fff;
+    border-radius: 0 0 5px 5px;
+
+}
+.imgWrap p{
+    position: absolute;
+    /* top: 0; */
+    bottom: 0;
+    color: #fff;
+    left: 5px;
+    width: 98%;
+    display:block;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.auctionLeft div {
+    display: none;
+}
+
+.auctionLeft div.select {
+    display: block;
+    line-height: 20px;
+}
+
+ .split {
+    display: block;
+    width: 100%;
+     height: 20px;
+     background: #f5f5f5;
+     -webkit-transform: scaleY(.5);
+     transform: scaleY(.5);
+     border: 1px solid #d7d7d7;
+     border-left: none;
+     border-right: none;
+
+}
+
+/*拍卖左右切换*/
+.auctionLeft {
+    /*display: none;*/
+}
+
+.auctionRight {
+    /*display: none;*/
+}
+
+.auctionRight .auctioning {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: #e6e6e6;
+    /*padding: 3px 0 3px 7px;*/
+    color: #333333;
+    font-size: 14px;
+    height: 25px;
+    padding-left: 25px;
+    line-height: 25px;
+    position: relative;
+
+}
+.auctionRight .auctioning::before {
+    content: "";
+    display: block;
+    position: absolute;
+    /*top: 70%;*/
+    left: 1px;
+    width: 31px;
+    height: 39px;
+    background: url("../images/index/autioning.png")  no-repeat ;
+    background-position:6px 3px ;
+    background-size:50%;
+}
+.activeHs {
+    width: 100%;
+    height: auto;
+    line-height: 20px;
+    box-sizing: border-box;
+}
+
+.activeHs .selectDl {
+    /*border-bottom: 1px solid #aaaaaa;*/
+    padding: 10px 5px;
+
+}
+
+.activeHs .selectDl p {
+    display: block;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.timeAuction dl h4{
+    font-size: 14px;
+
+    font-weight: 600;
+
+}
+.splitHis{
+    height: 1px;
+    background: #aaaaaa;
+    -webkit-transform: scaleY(.5);
+    transform:scaleY(.5);
+}
+/*底部*/
+
+.footer {
+    width: 100%;
+    height: auto;
+    max-width: 640px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #e6e6e6;
+    border-top: 1px solid #999999;
+}
+
+.footList {
+    width: 100%;
+    padding-left: 5%;
+}
+
+.footList li {
+    width: 20%;
+    float: left;
+    text-align: center;
+
+}
+
+.footList li img {
+    display: block;
+    width: 30px;
+    height: 30px;
+
+    /*background-size: auto;*/
+}
+
+.footList li span {
+    float: left;
+    margin-left: 4px;
+}
+
+#scroll {
+
+
+}
+
+/*底部切换*/
+.content{
+    display: none;
+}
+.content, .contente {
+    display: none;
+
+}
+
+.footer .footList li.active {
+    background: yellow;
+}
+
+.selected, .selecte {
+    display: block;
+}
+
+.auctionRight div {
+    display: none;
+}
+
+.auctionRight div.appear {
+    display: block;
+
+}
+
+/*///page2  css    /////////////////////////////*/
+
+.header2 {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    max-width: 640px;
+    padding: 5px;
+    box-sizing: border-box;
+    background: black;
+    z-index: 1100;
+}
+
+.header2 input {
+    width: 100%;
+    height: 30px;
+    border-radius: 20px;
+    padding-left: 23px;
+    border: none;
+    margin-bottom: 5px;
+}
+
+.header2 .search {
+    display: block;
+    width: 17px;
+    height: 17px;
+    background: url("../images/search02.png") no-repeat center center;
+    position: absolute;
+    top: 12px;
+    left: 9px;
+    background-size: 100% 100%;
+}
+
+.allGoods {
+    position: fixed;
+    z-index: 1100;
+    top: 45px;
+    width: 100%;
+}
+
+.allGoods ul {
+    box-sizing: border-box;
+    width: 100%;
+    background: whitesmoke;
+    height: auto;
+    display: -webkit-box;
+    border-bottom: 1px solid #999;
+}
+
+.allGoods ul li {
+    /*float: left;*/
+    -webkit-box-flex: 1;
+    text-align: center;
+    padding: 5px 0;
+
+}
+
+.allGoods ul li :nth-child(1) {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/*数据*/
+.firstData {
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+dl.selectData {
+    padding: 5px;
+    border-bottom: 1px solid red;
+}
+
+.firstData .selectData dt {
+    float: left;
+}
+
+.firstData .selectData dt img {
+    width: 80px;
+    height: 80px;
+    margin-right: 12px;
+    box-sizing: border-box;
+}
+
+.selectData span i {
+    font-style: normal;
+}
+
+.selectData span {
+    display: inline-block;
+    width: 34%;
+    line-height: 20px;
+}
+
+/*弹出层样式*/
+.saleMask {
+    display: none;
+    width: 100%;
+    height: 100%;
+    margin-top: 92px;
+    box-sizing: border-box;
+    position: fixed;
+}
+
+.saleMask ul {
+    padding: 10px;
+    background: #ffffff;
+    height: auto;
+}
+
+.saleMask ul li.bg {
+    background: #333333;
+    color: white;
+    border-radius: 20px;
+}
+
+.saleMask ul li {
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    float: left;
+    height: 25px;
+    line-height: 25px;
+    width: 25%;
+    text-align: center;
+}
+
+/*黑色透明遮罩层*/
+.saleMask .mask {
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: 0.7;
+    position: absolute;
+}
+
+
+
+/*细节调整*/
+
+@media all and (max-width: 320px) {
+    .tabSelect .selectC::before{
+        top: 35%;
+        background-position: 5px -12px;
+        width: 90%;
+        height: 18px;
+        left: 1%;
+    }
+}
+@media all and (min-width: 375px) {
+    .maskList .ListReal li :nth-child(2) {
+        width: 30%;
+        margin: 0 5% 0 17%;
+    }
+    .maskList .ListReal{
+        margin-left: 12px;
+    }
+    .header input{
+        width: 80%;
+    }
+}
+
+@media all and (max-width: 414px) {
+
+}
+

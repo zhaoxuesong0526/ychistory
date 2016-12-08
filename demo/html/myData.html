@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人资料</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.min.css">
+    <style>
+        .myData{
+            width: 100%;
+            height: auto;
+            background: #f5f5f5;
+            padding-top: 0.3rem;
+            box-sizing: border-box;
+
+
+
+        }
+        .myData div{
+            background: #FFFFFF;
+            box-sizing: border-box;
+            width: 100%;
+            height: 1rem;
+            line-height: 1rem;
+            padding-left: 0.3rem;
+            padding-right: 0.74rem;
+            font-size: 12px;
+            color: #000000;
+            position: relative;
+
+        }
+        .myData div:not(.two)::after{
+            content: "";
+            display: inline-block;
+            width: 15px;
+            height: 12px;
+            float: right;
+            background: url(../images/list/arrow.png) no-repeat center;
+            position: absolute;
+            top:0.38rem;
+            right: 0.3rem;
+        }
+        .myData div.one::after{
+            top:0.6rem;
+        }
+        .myData div:not(.one){
+            border-bottom: 1px solid #c8c7cc;
+        }
+
+        .myData div>:nth-child(1){
+            float: left;
+        }
+        .myData div>:nth-child(2){
+            float:right;
+            color: #8e8e93;
+        }
+        .myData>:nth-child(1){
+            height: 1.43rem;
+            line-height: 1.43rem;
+            margin-bottom: .3rem;
+        }
+        .myData .one>:nth-child(2){
+            margin-top: 0.31rem;
+            display: block;
+            width: 0.9rem;
+            height: 0.9rem;
+        }
+        .myData .one>:nth-child(2) img{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="myData clear">
+    <div class="one clear">
+        <span>头像</span>
+        <span><img id="img" src="../images/myself/avatar.png" alt=""></span>
+    </div>
+    <div class="two clear">
+        <span>昵称</span>
+        <span>快乐</span>
+    </div>
+    <div class="clear">
+        <span>易藏号</span>
+        <span>3813823</span>
+    </div>
+
+    <div class="clear">
+        <span>性别</span>
+        <span>选择</span>
+    </div>
+    <div class="clear">
+        <span>城市</span>
+        <span>未填写</span>
+    </div>
+    <div class="clear">
+        <span>年龄</span>
+        <span>未填写</span>
+    </div>
+    <div class="clear">
+        <span>邮箱</span>
+        <span>未填写</span>
+    </div>
+    <div class="clear">
+        <span>个性说明</span>
+        <span>未填写</span>
+    </div>
+</div>
+</body>
+</html>
+<script>
+
+    ;~function () {
+        var desW = 750;
+        var winW = document.documentElement.clientWidth;
+        if (winW > 750) return;
+        document.documentElement.style.fontSize = winW / desW * 100 + 'px';
+    }()
+
+</script>

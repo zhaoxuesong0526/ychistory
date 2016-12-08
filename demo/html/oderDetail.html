@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>订单详细信息</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.min.css">
+    <link rel="stylesheet" href="../css/order/oderDetail.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="orderDetail">
+        <header class="orderHead">
+            <span></span>
+            <span>订单详细信息</span>
+        </header>
+        <section class="orderContent">
+            <div class="orderNum">
+                 <span>订单号 ：123456789012345678</span>
+                <span>待支付</span>
+            </div>
+            <span class="TiShi">订单已之间，系统已处理,单您的订单还未完成支付,请您尽快完成支付</span>
+            <div class="orderTime clear">
+                <span>时间 : 2016-12-04 20:00</span>
+                <span>取消订单</span>
+                <span>支付</span>
+            </div>
+            <div class="orderAddress">
+                <span>收货地址与联系人</span>
+                <span>待发货</span>
+
+            </div>
+            <div class="info">
+                <span>联系人:赵雪松</span>
+                <span>电话:18510718164</span>
+                <span>北京市东城区东直门地铁站东方银座c座23H</span>
+            </div>
+            <div class="express clear">
+                <span>无物流信息</span>
+            </div>
+            <div class="shopInfo">
+                <span>商品信息</span>
+                <span>订单金额 : ￥30.9</span>
+                <span>佣金 : ￥0.9</span>
+            </div>
+            <dl class="shopShow clear">
+                <dt><img src="../images/myself/t5.jpg" alt=""></dt>
+                <dd>
+                    <span>￥ 30.00</span>
+                    <span>商品名称: 古罗马帝国铜币4</span>
+                    <span>x1</span>
+                </dd>
+            </dl>
+            <div class="Waiter">
+               <span>联系客服</span>
+               <span id="Contact">联 系 客 服</span>
+            </div>
+            <div class="mask"></div>
+            <div class="maskCont">
+                <div class="prompt">
+                    <span>提示</span>
+                    <span>拨打电话</span>
+                </div>
+               <div class="tel">
+                   <span class="cancel">取消</span>
+                   <span><a href="tel:010-57291805">拨打</a></span>
+               </div>
+
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+<script src="../js/order/zepto.js"></script>
+<script src="../js/order/zepto.fx.js"></script>
+<script>
+    ~function () {
+        var desW = 640;
+        var winW = document.documentElement.clientWidth;
+        if (winW > 640) return;
+        document.documentElement.style.fontSize = winW / desW * 100 + 'px';
+    }();
+
+
+//    增加联系客服
+    $("#Contact").on('touchend',function () {
+        $(".mask").css({'top':'0'});
+        $('.maskCont').css({'top':'0'})
+    });
+    $('.cancel').on('touchend',function () {
+        $(".mask").css({'top':'-1000px'});
+        $('.maskCont').css({'top':'-1000px'})
+    })
+</script>

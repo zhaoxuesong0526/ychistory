@@ -1,0 +1,190 @@
+
+html {
+    font-size: 100px;
+}
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: '微软雅黑';
+}
+i,em{
+    font-style: normal;
+}
+.myOrder{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+.myCollection{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+.Collectionhead{
+    background: #242424;
+    font-size: 0.3rem;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    color: #FFFFFF;
+    padding-left: 0.28rem;
+
+    box-sizing: border-box;
+}
+.Collectionhead :nth-child(1){
+    width: 0.25rem;
+    height:0.4rem;
+    display: inline-block;
+    vertical-align: middle;
+    background: url("../../images/myself/fanhui.png")no-repeat center;
+    background-size:cover;
+}
+.Collectionhead :nth-child(2){
+   margin-left: 2.6rem;
+
+    font-size: 0.3rem;
+}
+.CollChange{
+    width: 100%;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    font-size: .14rem;
+
+    border-top: 1px solid #e7e7e8;
+}
+.CollChange ul li{
+    float: left;
+    width: 50%;
+    text-align: center;
+
+}
+.CollChange ul li.bg{
+    color: #5ba5e3;
+}
+.CollChange ul li em.on{
+    display: block;
+    color: #5ba5e3;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: -0.02rem;
+    border-bottom: 1px solid #515153;
+}
+.CollList{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    background: #f5f5f5;
+}
+.CollListWrap{
+    padding: .6rem 0.2rem 0.36rem 0.32rem;
+    background: #FFFFFF;
+    border-bottom: 1px solid #d7d7d7;
+    border-top: 1px solid #d7d7d7;
+    margin-bottom: 0.4rem;
+    overflow: hidden;
+
+
+}
+.CollListWrap dt {
+    float: left;
+    width: 2rem;
+    height: 2rem;
+    overflow: hidden;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;;
+    margin-top: 0.4rem;
+
+}
+.CollListWrap dt img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.CollListWrap dd {
+    width: 64%;
+    float: left;
+    padding-left: 0.3rem;
+    line-height: 0.5rem;
+    position: relative;
+}
+.CollListWrap dd strong{
+    display:inline-block;
+    width: 0.4rem;
+    height: .28rem;
+    background: url("../../images/list/arrow.png") no-repeat center center;
+    position: absolute;
+    top: 45%;
+    right: 0rem;
+    opacity: 0.5;
+}
+.CollListWrap dd em img{
+    width: 100%;
+    height: 100%;
+}
+.CollListWrap dd h3 {
+    font-size: 0.3rem;
+
+    display: block;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.CollListWrap dd .desp{
+    width:100%;
+    color: #c7c7cc;
+
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.CollListWrap dd span {
+    display: inline-block;
+    line-height: 0.6rem;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    color: #c7c7cc;
+    width: 48%;
+}
+.CollListWrap dd .small{
+    width: 0;
+    font-size: 0.24rem;
+    transform:scale(0.9);
+    -webkit-transform:scale(0.9);
+    color: #6f7179;
+}
+.CollListWrap dd span.auctionPrice{
+    color: #ccb299;
+    width: 100%;
+}
+.CollListWrap dd :nth-child(5) i{
+    font-size: 0.32rem;
+    font-style: italic;
+    font-weight: 600;
+}
+i {
+    display: inline-block;
+    font-style: normal;
+}
+.status{
+    float: right;
+    border: 1px solid #c0c0c0;
+    border-radius: 3px;
+    height: 0.64rem;
+    line-height: 0.64rem;
+    text-align: center;
+    width: 2rem;
+    color: #000000;
+}
+
+/*切换*/
+.bg{
+    color: #5ba5e3;
+}
+.CollList>div{
+    display: none;
+}
+.CollList>div.apper{
+    display: block;
+}

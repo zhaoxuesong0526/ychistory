@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>分享页</title>
+    <link rel="stylesheet" href="css/pubCss.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="js/jquery.min.1.11.3.js"></script>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+<div class="detailsPage">
+
+    <header class="header">
+        <div class="swiper-container" >
+            <div class="swiper-wrapper" id="picWrap" >
+                <!--<div class="swiper-slide warpBg"><img src="images/listDetail/demo_1.jpg" alt=""></div>-->
+                <!--<div class="swiper-slide warpBg"><img src="images/listDetail/demo_2.jpg" alt=""></div>-->
+
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </header>
+    <div class="time" id="time" >
+        <!--<div class="countDown"><span>距离结束  </span><em> 01 </em> 天 <em> 06 </em> : <em> 49 </em> : <em> 25 </em></div>-->
+    </div>
+    <div class="maskWrap" id="maskWrap">
+        <!--<div class="mask"></div>-->
+        <!--<div class="maskList">-->
+        <!--<div class="ListHead">-->
+        <!--<span>出价列表</span>-->
+        <!--<span class="btn"></span>-->
+        <!--<div class="middle">-->
+        <!--<span>出价</span>-->
+        <!--<span>出价用户</span>-->
+        <!--<span>出价时间</span>-->
+        <!--</div>-->
+        <!--</div>&ndash;&gt;-->
+        <!--<ul class="ListReal">-->
+        <!--<li>-->
+        <!--<span>￥<i>10</i></span>-->
+        <!--<span>赵钱孙李</span>-->
+        <!--<span>11-03 09:35:56</span>-->
+        <!--</li>-->
+        <!--</ul>-->
+        <!--</div>-->
+    </div>
+    <section id="section">
+        <!--<div class="one">-->
+        <!--<h3>挂号封13件(J55*4.J54*4.J68*5)1件</h3>-->
+        <!--<i></i>-->
+        <!--<em></em>-->
+        <!--</div>-->
+        <!--<div class="two">-->
+        <!--<p>所属卖方：<i>琪哥网【佣金3%:Y0.00】</i></p>-->
+        <!--<span>拍好：<em>1/35</em></span>-->
+        <!--</div>-->
+        <!--<div class="three">-->
+        <!--<span>起拍价格：￥<i>0</i><em></em><strong></strong></span>-->
+        <!--<span>即将开始</span>-->
+        <!--</div>-->
+        <!--<span class="split"></span>-->
+        <!--<span>品相：<i>原票</i></span>-->
+        <!--<div class="four">-->
+        <!--<span>挂号封13件(J55*4.J54*4.J68*5)</span>-->
+        <!--<em></em>-->
+        <!--</div>-->
+         <!--<div class="maskWrap" id="maskWrap">-->
+          <!--<div class="mask"></div>-->
+          <!--<div class="maskList">-->
+              <!--<div class="ListHead">-->
+                  <!--<span>出价列表</span>-->
+                  <!--<span class="btn"></span>-->
+                  <!--<div class="middle">-->
+                      <!--<span>出价</span>-->
+                      <!--<span>出价用户</span>-->
+                      <!--<span>出价时间</span>-->
+                  <!--</div>-->
+              <!--</div>&ndash;&gt;-->
+        <!--<ul class="ListReal">-->
+        <!--<li>-->
+        <!--<span>￥<i>10</i></span>-->
+        <!--<span>赵钱孙李</span>-->
+        <!--<span>11-03 09:35:56</span>-->
+        <!--</li>-->
+        <!--</ul>-->
+        <!--</div>-->
+        <!--</div>-->
+       <!--<div class="maskDesc">-->
+        <!--<div class="mask"></div>-->
+        <!--<div class="descList">-->
+        <!--<div class="descHead">-->
+        <!--<span>出价列表出价列表出价列表出价列表]出价列表出价列表出价列表出价列表</span><span class="btnDesc"></span>-->
+        <!--</div>-->
+        <!--<div class="descDe">-->
+        <!--<span>缺陷描述 ：<i>出价列表出价列表出价列表出价列表出价列表出价列表出价列表出价列表</i></span>-->
+        <!--<span>藏品介绍 ：<i>出价列表出价列表出价列表出价列表出价列表出价列表出价列表出价列表出价列表出价列表出价列表出价列表</i></span>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+    </section>
+    <footer class="footer">
+        <div class="download">
+            <span></span>
+            <span>易藏</span>
+            <span id="down">免费下载</span>
+        </div>
+    </footer>
+</div>
+</body>
+
+</html>
+<script src="js/fastclick.js"></script>
+<script src="js/index.js"></script>
+<script src="js/swiper.min.js"></script>
+<script>
+    window.onload = function () {
+        FastClick.attach(document.body);
+    };
+var down=document.getElementById('down');
+    down.onclick=function () {
+        window.location.href='http://www.yicangonline.com/moblie/downloadApp.do'
+    }
+</script>
+<script>
+
+
+</script>

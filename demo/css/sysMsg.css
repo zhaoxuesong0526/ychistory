@@ -1,0 +1,66 @@
+body,html{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.header{
+    height: 30px;
+    width: 100%;
+    background: #000000;
+    color: #FFFFFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    overflow: hidden;
+}
+.header :first-child{
+
+    display:inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    vertical-align: 5px;
+    background: url("../images/list/backarraw@2x.png") no-repeat center center ;
+    background-size:contain;
+
+}
+
+.header :nth-child(2){
+    /*margin-left: 15px;*/
+    display: inline-block;
+    color: white;
+    width: 78%;
+    font-size: 16px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    line-height: 30px;
+}
+.section{
+    margin-top: 30px;
+    overflow-x: hidden;
+}
+
+.section .content{
+    width:100%;
+    box-sizing: border-box;
+    padding: 5px 0 5px 15px;
+}
+.section .content span{
+    color: #4d4d4c;
+}
+.content .time{
+    display: block;
+    line-height: 30px;
+}
+.section .split{
+    height: 1px;
+    background: #8e908c;
+    width: 200%;
+    -webkit-transform: scaleY(.5);
+    transform:scaleY(.5);
+    display: block;
+}

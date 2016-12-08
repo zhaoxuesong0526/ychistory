@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>首页</title>
+    <style>
+        #wrapper {
+            position: absolute;
+            z-index: 1;
+            left: 0;
+            width: 100%;
+            top: 0;
+            bottom: 0;
+
+        }
+
+        #scroller {
+            width: 100%;
+
+            position: absolute;
+            z-index: 1;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+            -webkit-transform: translateZ(0);
+            -moz-transform: translateZ(0);
+            -ms-transform: translateZ(0);
+            -o-transform: translateZ(0);
+            transform: translateZ(0);
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-text-size-adjust: none;
+            -moz-text-size-adjust: none;
+            -ms-text-size-adjust: none;
+            -o-text-size-adjust: none;
+            text-size-adjust: none;
+        }
+
+        /****** 下拉刷新、上拉加载更多的样式********/
+        #pulldown, #pullup {
+            background: #fff;
+            height: 40px;
+            line-height: 40px;
+            padding: 5px 10px;
+            border-bottom: 1px solid #ccc;
+            font-weight: bold;
+            font-size: 14px;
+            color: #888;
+        }
+
+        #pulldown .pulldown-icon, #pullup .pullup-icon {
+            display: block;
+            float: left;
+            width: 40px;
+            height: 40px;
+            background: url(images/index1/pull-icon@2x.png) 0 0 no-repeat;
+            -webkit-background-size: 40px 80px;
+            background-size: 40px 80px;
+            -webkit-transition-property: -webkit-transform;
+            -webkit-transition-duration: 250ms;
+        }
+
+        #pulldown .pulldown-icon {
+            -webkit-transform: rotate(0deg) translateZ(0);
+        }
+
+        #pullup .pullup-icon {
+            -webkit-transform: rotate(-180deg) translateZ(0);
+        }
+
+        #pulldown.flip .pulldown-icon {
+            -webkit-transform: rotate(-180deg) translateZ(0);
+        }
+
+        #pullup.flip .pullup-icon {
+            -webkit-transform: rotate(0deg) translateZ(0);
+        }
+
+        #pulldown.loading .pulldown-icon, #pullup.loading .pullup-icon {
+            background-position: 0 100%;
+            -webkit-transform: rotate(0deg) translateZ(0);
+            -webkit-transition-duration: 0ms;
+
+            -webkit-animation-name: loading;
+            -webkit-animation-duration: 2s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-timing-function: linear;
+        }
+
+        @-webkit-keyframes loading {
+            from {
+                -webkit-transform: rotate(0deg) translateZ(0);
+            }
+            to {
+                -webkit-transform: rotate(360deg) translateZ(0);
+            }
+        }
+    </style>
+    <link href="css/reset.min.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css/echo.css">
+    <link href="css/index.css" rel="stylesheet" type="text/css"/>
+    <link href="css/swiper.min.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="js/jquery.min.1.11.3.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/iscroll2.js"></script>
+    <script src="js/iscrollAssist.js"></script>
+    <script src="js/fastclick.js"></script>
+</head>
+<body>
+
+<div class="page1  content selected" id="page1">
+    <div class="header">
+        <span class="logo"></span>
+        <input id="search" type="search" placeholder="请输入关键字"/>
+        <i class="search"></i>
+        <span class="headerIcon"></span>
+    </div>
+    <div class="headSe">
+        <span class="backSerch"></span>
+        <input id="headSearch" type="search" placeholder="请输入关键字"/>
+        <i class="searchSe"></i>
+        <span class="headIcon">搜索</span>
+    </div>
+    <!--<div class="banner"></div>-->
+    <div id="wrapper" class="clear">
+
+        <div class="scroll clear" id="scroller">
+            <!--<div id="pulldown" >-->
+            <!--<span class="pulldown-icon"></span><span id="pulldown-label"></span>-->
+            <!--</div>-->
+            <div class="sider swiper-container ">
+                <div class="swiper-wrapper" id="CarouselPic">
+                    <div class="swiper-slide banner"><img src="images/blank.gif" data-echo="" alt=""></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="tabWrap" id="tabWrap">
+                <ul class="tabTitle">
+                    <li class="activeR active bgcolor" id="activeR"><span>拍卖</span></li>
+                    <li class="activeLs" id="historyTrad"><span>历史成交</span></li>
+                </ul>
+
+                <!--正在拍卖-->
+
+                <div class="auctionRight contente selecte">
+                    <!--首页正在拍卖之  定时拍卖-->
+                    <div class="timeAuction appear " id="timeAuction">
+
+
+                    </div>
+                </div>
+                <!--历史交易-->
+                <div class="activeHs contente" id="history">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<script src="js/echo.min.js"></script>
+<script type="text/javascript">
+
+    window.onload = function () {
+        FastClick.attach(document.body);
+    };
+    echo.init();
+
+    $(function () {
+        $('.header2,.allGoods,.mask,.saleMaskL').bind('touchmove', function (e) {
+            e.preventDefault()
+        })
+    });
+
+</script>
+<script src="js/index.js"></script>
+<script src="js/search.js"></script>
+
+</body>
+</html>
+<script type="text/javascript">
+
+
+//    var myScroll;
+//    var  myScrolP;
+//    function load() {
+//        myScroll = new IScroll('#wrapper', {});
+//
+//
+//
+//
+////        document.addEventListener('touchmove', function (e) {
+////            e.preventDefault();
+////        }, false);
+//    }
+//
+//    window.addEventListener('load', load, false);
+//
+
+</script>
+<!--
+<script type="text/javascript">
+    (function($){
+        $(function(){
+//            var pulldownAction = function(){
+//                var temp = '';
+//                for(var i=1;i<16;i++){
+//                    temp += '<dd>'+i+'</dd>';
+//                }
+//                $('#dataArea').html(temp);
+//                this.refresh();
+//                console.log("下拉执行逻辑");
+//            };
+//            var pullupAction = function(){
+//
+//                var temp = '';
+//                for(var i=1;i<16;i++){
+//                    temp += '<dd>'+i+'</dd>';
+//                }
+//                $('#dataArea').append(temp);
+//                this.refresh();
+//                console.log("上拉执行逻辑");
+//            };
+            var iscrollObj = iscrollAssist.newVerScrollForPull($('#wrapper'),pulldownAction,pullupAction);
+            iscrollObj.refresh();
+        });
+    })(jQuery);
+
+
+</script>-->

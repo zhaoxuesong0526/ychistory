@@ -1,0 +1,154 @@
+/*我的订单*/
+
+html {
+    font-size: 100px;
+}
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: '微软雅黑';
+}
+i,em{
+    font-style: normal;
+}
+.myOrder{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.ordHead{
+    background: #242424;
+    font-size: 0.3rem;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    color: #FFFFFF;
+    padding-left: 0.28rem;
+}
+.ordHead :nth-child(1){
+    width: 0.2rem;
+    height:0.4rem;
+    display: inline-block;
+    vertical-align: middle;
+    background: url("../images/myself/fanhui.png")no-repeat center;
+    background-size:cover;
+}
+.ordHead :nth-child(2){
+    margin-left: 2.14rem;
+}
+.ordChange{
+    width: 100%;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    font-size: .14rem;
+    border-bottom: 1px solid #e7e7e8;
+    border-top: 1px solid #e7e7e8;
+    color: #969696;
+}
+.ordChange ul li{
+    float: left;
+    width: 33%;
+    text-align: center;
+
+}
+.ordChange ul li.bg{
+    color: #5ba5e3;
+}
+.ordChange ul li em.on{
+    display: block;
+    color: #5ba5e3;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: -0.02rem;
+    border-bottom: 1px solid #515153;
+}
+.lot,.waitPay,.completePay{
+    width: 100%;
+    height: auto;
+
+    box-sizing: border-box;
+}
+.lot .ordNum,.waitPay .ordNum,.completePay .ordNum{
+    padding-top: 0.12rem;
+    padding-bottom: 0.09rem;
+    border-bottom: 1px solid #c0c0c0;
+}
+.lot .ordNum>:nth-child(1),.waitPay .ordNum>:nth-child(1),.completePay .ordNum>:nth-child(1){
+    float: left;
+    padding-left: 0.14rem;
+    color: #000000;
+}
+.lot .ordNum>:nth-child(2),.waitPay .ordNum>:nth-child(2),.completePay .ordNum>:nth-child(2){
+    float: right;
+    margin-right: 0.14rem;
+    color: #ff001c;
+    /*width:1rem;*/
+    height: 0.4rem;
+    line-height: 0.4rem;
+    /*background: #9c9c9c;*/
+    text-align: center;
+}
+.lot dl,.waitPay  dl,.completePay  dl{
+    padding-top: 0.12rem;
+    padding-bottom: 0.18rem;
+}
+.lot dl dt,.waitPay dl dt,.completePay dl dt{
+    float: left;
+    width: 1.1rem;
+    height: 1.1rem;
+    padding:0 0.14rem;
+}
+.lot dl dt img,.waitPay dl dt img,.completePay dl dt img{
+    width: 100%;
+    height: 100%;
+}
+.lot dl dd,.waitPay dl dd,.completePay dl dd{
+    float: left;
+    width: 70%;
+    line-height: 0.38rem;
+    color: #484848;
+}
+.lot dl dd span,.waitPay dl dd span,.completePay dl dd span{
+    display: block;
+    width: 100%;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.buyPrice{
+    height: 0.65rem;
+    padding-top:0.1rem ;
+    border-bottom: 1px solid #c0c0c0;
+    border-top: 1px solid #c0c0c0;
+    color: #909090;
+}
+.buyPrice :nth-child(1){
+    float: left;
+    padding-top: 0.14rem;
+    padding-left: 0.14rem;
+    color: #000;
+}
+.buyPrice :nth-child(2),.buyPrice :nth-child(3){
+    float: right;
+    border-radius:3px ;
+    margin-right: 0.14rem;
+    width: 1.2rem;
+    text-align: center;
+    border: 1px solid #9c9c9c;
+    padding: 0.09rem 0;
+}
+.buyPrice :nth-child(2){
+    border: 1px solid  red;
+    color: red;
+}
+.lot .split,.waitPay .split,.completePay .split{
+    height: 0.2rem;
+    display: block;
+    background: #f5f5f5;
+}
+/*订单页卡切换*/
+.ordSection>div{
+    display: none;
+}
+.ordSection .apper{  display: block;  }

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>收货地址设置</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.min.css">
+    <link rel="stylesheet" href="../css/order/address.css">
+    <style>
+        .address{
+            padding-left: 0.7rem;
+            font-size: .26rem;
+        }
+        .address div{
+            height: 1.2rem;
+            border-bottom: 1px solid #e1e1e1;
+            line-height: 1.2rem;
+            color: #0d0d0d;
+        }
+        .address div input{
+            outline: none;
+            border: none;
+        }
+
+        .address div textarea{
+
+        }
+        .address button{
+            width: 5.64rem;
+            display: block;
+            height: 0.8rem;
+            margin: 0 auto;
+            margin-top: 1rem;
+            border: none;
+            background: #3c7cf1;
+            font-size: .36rem;
+            color: #FFFFFF;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="address">
+     <div>  &nbsp; &nbsp;收货人 : <input type="text"></div>
+    <div>联系电话 : <input type="text"></div>
+    <div>收货地址 : <input type="text"></div>
+
+    <button>确 定</button>
+</div>
+</body>
+</html>
+<script src="../js/order/zepto.js"></script>
+<script>
+    ;~function () {
+        var desW = 750;
+        var winW = document.documentElement.clientWidth;
+        if (winW > 750) return;
+        document.documentElement.style.fontSize = winW / desW * 100 + 'px';
+    }();
+</script>

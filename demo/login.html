@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/pubCss.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+<div class="bg"><img src="images/login/demo_4.png" alt=""></div>
+<div class="mask"></div>
+<div class="login">
+    <div class="logo"></div>
+    <h3>北京易藏网络技术有限公司</h3>
+    <div class="inputWrap">
+        <div class="text">
+            <span></span>
+            <input id="tel" type="text" class="countNub" placeholder="手机号">
+        </div>
+
+        <div class="codeText">
+            <span></span>
+        <input id="pwd" type="text"class="Verification-Code" placeholder="验证码"><input type="text" value="获取验证码"  class="getCode">
+        </div>
+
+        <button class="loginCode" id="loginCode">验证码登录</button>
+    </div>
+    <div class="read">
+        <em class="no" id="read"></em>
+        <span>我已阅读并同意 <i>注册协议(使用条款和隐私策略)</i></span>
+    </div>
+
+    <!--<footer class="footer">-->
+        <!--<p>使用第三方账号登录</p>-->
+        <!--<div class="otherLogin">-->
+            <!--<span></span>-->
+            <!--<span></span>-->
+            <!--<span></span>-->
+        <!--</div>-->
+    <!--</footer>-->
+
+</div>
+
+</body>
+</html>
+<script src="js/jquery.min.1.11.3.js"></script>
+<script src="js/login.js"></script>
+<script>
+    ;~function () {
+        var desW = 750;
+        var winW = document.documentElement.clientWidth;
+        if (winW > 750) return;
+        document.documentElement.style.fontSize = winW / desW * 100 + 'px';
+    }();
+    $("#button").on('touchend',function (e) {
+        var textVal=$("#textVal").val();
+        console.log(textVal)
+    })
+</script>

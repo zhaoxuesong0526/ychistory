@@ -1,0 +1,230 @@
+.orderDetail{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.orderHead{
+    background: #242424;
+    font-size: 0.3rem;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    color: #FFFFFF;
+    text-align: center;
+}
+.orderHead>:nth-child(1){
+    position: relative;left: -1.96rem;
+    width: 0.2rem;
+    height:0.4rem;
+    display: inline-block;
+    vertical-align: middle;
+    background: url("../../images/myself/fanhui.png")no-repeat center;
+    background-size:cover;
+}
+.orderContent .orderNum{
+    height: 0.6rem;
+    line-height: 0.6rem;
+    background: #ebebeb;
+    padding: 0 0.14rem;
+}
+.orderNum :nth-child(1){
+    float: left;
+}
+.orderNum :nth-child(2){
+    float: right;
+}
+.TiShi{
+    box-sizing: border-box;
+    display: block;
+    height: 1.12rem;
+    padding-top: 0.32rem;
+    padding-left: 0.23rem;
+    border-bottom: 0.01rem solid #f6f6f6;
+}
+.orderTime{
+    width: 100%;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    box-sizing: border-box;
+    padding: 0 0.15rem;
+}
+.orderTime :nth-child(2){
+    margin-right: 0.08rem;
+    width: 1.2rem;
+    border: 1px solid #c0c0c0;
+    padding: 0.09rem 0.14rem;
+    border-radius: 0.03rem;
+    margin-left: 0.8rem;
+
+
+}
+.orderTime :nth-child(3){
+    border-radius: 0.03rem;
+    width: 1rem;
+    border: 1px solid red;
+    padding: 0.09rem 0.28rem;
+}
+.orderAddress{
+    height: 0.6rem;
+    line-height: 0.6rem;
+    background: #ebebeb;
+    padding: 0 0.14rem;
+}
+.orderAddress :nth-child(1){
+    float: left;
+}
+.orderAddress :nth-child(2){
+    float: right;
+}
+
+.info{
+    height:1.46rem;
+    line-height: 0.4rem;
+    padding: 0.16rem 0.18rem;
+    border-bottom: 1px solid #c0c0c0;
+}
+.info :nth-child(3){
+    float: left;
+}
+.express{
+    height: 0.6rem;
+    line-height: 0.6rem;
+    padding-top: 0.09rem;
+    box-sizing: border-box;
+    padding-right: 0.18rem;
+
+}
+.express span{
+    display: inline-block;
+    padding: 0 0.12rem;
+    height: 0.38rem;
+    line-height: 0.38rem;
+    border: 1px solid #9c9c9c;
+    border-radius: 3px;
+    float: right;
+}
+
+.shopInfo{
+    height: 0.6rem;
+    line-height: 0.6rem;
+    background: #ebebeb;
+    padding: 0 0.14rem;
+}
+
+.shopInfo :nth-child(1){
+    float: left;
+    box-sizing: border-box;
+}
+.shopInfo :nth-child(3){
+    margin-right: 0.25rem;
+}
+.shopInfo :nth-child(2),.shopInfo :nth-child(3){
+    float: right;
+}
+.shopShow{
+    height: 1.62rem;
+    padding-top: 0.08rem;
+    box-sizing: border-box;
+    padding-right: 0.2rem;
+}
+.shopShow dt{
+    float: left;
+    width: 1.1rem;
+    height: 1.1rem;
+    padding: 0 .15rem 0 0.27rem;
+}
+.shopShow dt img{
+    width: 100%;
+    height: 100%;
+}
+.shopShow dd{
+    float: left;
+}
+
+.shopShow dd span{
+    display: block;
+    width: 100%;
+}
+.shopShow dd :nth-child(1){
+    position: relative;
+   left: 3.8rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+}
+.Waiter :nth-child(1){
+    display: block;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    background: #ebebeb;
+    padding: 0 0.14rem;
+}
+.Waiter :nth-child(2){
+    display: block;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    color: #FFFFFF;
+    font-size: 16px;
+    width: 4.27rem;
+    background: #3b7cf0;
+    margin: 0.47rem 0 0 1.27rem;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+
+/*联系客服弹窗*/
+
+.mask{
+
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: 0.8;
+    position: absolute;
+    z-index: 2;
+    top: -1000px;
+    bottom: 0;
+
+}
+.maskCont{
+    width: 80%;
+    height: 2.2rem;
+    background: #FFFFFF;
+    position: absolute;
+    z-index: 3;
+    top: -1000px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    border-radius: 10px;
+}
+.prompt{
+    padding-top: 0.4rem;
+    border-bottom: 1px solid #8e908c;
+}
+.prompt span{
+    display: block;
+    text-align: center;
+}
+.prompt>:nth-child(1){
+    font-size:0.28rem;
+}
+.prompt>:nth-child(2){
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+
+.tel{
+    width: 100%;
+}
+.tel span{
+    display: inline-block;
+    width: 48%;
+    text-align: center;
+    line-height: .66rem;
+}
+.tel>:nth-child(1){
+    border-right:1px solid #8e908c;
+}

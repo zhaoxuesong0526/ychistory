@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>反馈信息</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.min.css">
+    <style>
+        .proBorder{
+
+        }
+        .proBorder textarea{
+            padding: 0.1rem;
+            margin: 1.25rem 0 0 1rem;
+            resize: none;
+            display: block;
+            width: 5.4rem;
+            height: 2.7rem;
+            line-height: 0.4rem;
+        }
+
+        .proBorder button{
+            font-size: 0.4rem;
+            color: #FFFFFF;
+            font-weight:bold;
+            width: 5.6rem;
+            border-radius: 5px;
+            height: .7rem;
+            border: none;
+            background: #3c7cf1;
+            margin: 0 auto;
+            margin-top: 1rem;
+            margin-left: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="proBorder">
+        <textarea id="textVal" rows="10" cols="30" placeholder="请提出您的宝贵意见" value=""></textarea>
+        <button id="button">提 &nbsp; &nbsp;交</button>
+    </div>
+</body>
+</html>
+<script src="../js/order/zepto.js"></script>
+<script>
+    ;~function () {
+        var desW = 750;
+        var winW = document.documentElement.clientWidth;
+        if (winW > 750) return;
+        document.documentElement.style.fontSize = winW / desW * 100 + 'px';
+    }();
+    $("#button").on('touchend',function (e) {
+        var textVal=$("#textVal").val();
+        console.log(textVal)
+    })
+</script>

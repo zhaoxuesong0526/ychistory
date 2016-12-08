@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的收藏</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.min.css">
+    <link rel="stylesheet" href="../css/order/myCollection.css">
+</head>
+<body>
+<div class="myCollection">
+<header class="Collectionhead">
+    <span></span>
+    <span>我的收藏</span>
+</header>
+<div class="CollChange">
+    <ul>
+        <li class="bg">拍品<em class="on"></em></li>
+        <li>藏品<em></em></li>
+    </ul>
+</div>
+<section class="CollList">
+        <div class="CollListWrap apper">
+        <dl class="list clear">
+            <dt class="clear">
+                <img src="../images/tu@2x.png"/>
+            </dt>
+            <dd class="clear">
+                <span class="small">拍号 :  1 <i>/</i><i>2</i></span>
+                <h3>贺知章纪水电费水电费华盛顿经费等飞机等很久飞机和环境念印章</h3>
+                <span>类型 : 大铜章</span>
+                <span >品相 : <i>裸币</i></span>
+                <div class="desp">所属 : 浙江易金</div>
+                <span class="auctionPrice">起拍价：￥<i>100.0</i></span>
+                <strong></strong>
+                <div class="status" >即将开始</div>
+            </dd>
+        </dl>
+
+
+    </div>
+        <div class="CollListWrap CollListRight">
+            <dl class="list clear">
+                <dt class="clear">
+                    <img src="../images/tu@2x.png"/>
+                </dt>
+                <dd class="clear">
+                    <span class="small">拍号 :  1 <i>/</i><i>2</i></span>
+                    <h3>贺知章纪水电费水电费华盛顿经费等飞机等很久飞机和环境念印章</h3>
+                    <span>类型 : 大铜章</span>
+                    <span >品相 : <i>裸币</i></span>
+                    <div class="desp">所属 : 浙江易金</div>
+                    <span class="auctionPrice">起拍价：￥<i>100.0</i></span>
+                    <strong></strong>
+                </dd>
+            </dl>
+
+
+        </div>
+    </section>
+</div>
+</body>
+</html>
+<script src="../js/order/zepto.js"></script>
+<script>
+    ;~function () {
+        var desW = 750;
+        var winW = document.documentElement.clientWidth;
+        if (winW > 750) return;
+        document.documentElement.style.fontSize = winW / desW * 100 + 'px';
+    }();
+
+
+
+    $(function () {
+        function Collection(e) {
+            $(this).addClass('bg').siblings('li').removeClass("bg");
+            var index = $(this).index();
+            $(this).children().addClass('on');
+            $(this).siblings().children().removeClass('on');
+
+            $('.CollList>div').eq(index).addClass('apper').siblings('div').removeClass('apper');
+
+        }
+        $(".CollChange>ul>li").on('touchend',Collection);
+    });
+</script>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #wrapper {
+            position: absolute;
+            z-index: 1;
+
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+
+
+        }
+
+        #scroller {
+            position: absolute;
+            z-index: 1;
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
+            width: 100%;
+            -webkit-transform: translateZ(0);
+            -moz-transform: translateZ(0);
+            -ms-transform: translateZ(0);
+            -o-transform: translateZ(0);
+            transform: translateZ(0);
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-text-size-adjust: none;
+            -moz-text-size-adjust: none;
+            -ms-text-size-adjust: none;
+            -o-text-size-adjust: none;
+            text-size-adjust: none;
+        }
+    </style>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/pubCss.css">
+    <link rel="stylesheet" href="css/historyList.css">
+    <script src="js/jquery.min.1.11.3.js"></script>
+    <script src="js/iscroll.js"></script>
+</head>
+<body>
+    <div class="hisWrap" id="hisWrap">
+        <header class="header" id="header">
+            <!--<span></span>-->
+            <!--<h1>琪哥网</h1>-->
+        </header>
+        <div id="wrapper">
+            <div id="scroller">
+                <section class="section clear" id="section">
+
+            <!--<dl class="clear">-->
+                <!--<dt><img src="images/tu@2x.png" alt=""></dt>-->
+                <!--<dd>-->
+                    <!--<h3>琪哥网第99期集合易藏肾琪哥网第99期集合易藏肾</h3>-->
+                    <!--<span>拍卖时间:10-27 09:30</span>-->
+                    <!--<span>所属：<i>琪哥网</i></span>-->
+                    <!--<span>简介：<i>我金额就登记登金额就登记金额就登记金额就登记</i></span>-->
+                    <!--<p>已结束拍卖</p>-->
+                <!--</dd>-->
+            <!--</dl>-->
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="js/historyList.js"></script>
+<script type="text/javascript">
+
+    var myScroll;
+
+    function loaded () {
+        myScroll = new IScroll('#wrapper', {
+
+
+        });
+
+    }
+    loaded ();
+    document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+
+
+</script>

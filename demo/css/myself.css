@@ -1,0 +1,161 @@
+html {
+    font-size: 100px;
+}
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: '微软雅黑';
+    -webkit-touch-callout: none;/* 禁止或显示系统默认菜单*/
+-webkit-user-select: none; /*//禁止长按复制选择*/
+-webkit-tap-highlight-color: rgba(0,0,0,0);/*//禁止触摸a标签高亮 这个特别实用*/
+}
+i,em{
+    font-style: normal;
+}
+/*首页*/
+.main {
+    margin: 0 auto;
+    max-width: 640px;
+    color: #6b6b6b;
+    background: #e9e9e9;
+    height: auto;
+    /*display: none;*/
+}
+.header {
+    overflow: hidden;
+    width: 100%;
+    height: 3.37rem;
+    background: url("../images/myself/topbackground.png") no-repeat center;
+    position: relative;
+}
+.header > :first-child {
+    display: block;
+    float: right;
+    margin-right: 0.46rem;
+    margin-top: 0.3rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    background: url("../images/myself/shezhi.png") no-repeat center;
+    background-size: 100%;
+}
+.header > :nth-child(2) {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    margin-left: 2.45rem;
+    margin-top: 0.85rem;
+
+}
+.header > :nth-child(2) img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.header div {
+    text-align: center;
+    color: #fff;
+    line-height: 0.4rem;
+}
+.section,.section ul{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+.section ul li{
+    box-sizing: border-box;
+    padding-left: 0.36rem;
+    width: 100%;
+    height: 0.76rem;
+    line-height: 0.76rem;
+    background: #FFFFFF;
+    border-bottom: 0.01rem solid #dfdfdf;
+}
+.section ul .bgp::after{
+    float: right;
+    content: "";
+    display: inline-block;
+    width:0.4rem;
+    height:0.4rem;
+    margin-top: 0.13rem;
+    background: url("../images/myself/jiantou.png")     no-repeat center;
+    background-size: contain;
+
+}
+.section ul :nth-child(2){
+    height: 1.14rem;
+    line-height: 0.2rem;
+}
+.section ul .pay div{
+    position: relative;
+    top: 0.21rem;
+
+    width: 50%;
+    float: left;
+    /*margin-top: 0.23rem;*/
+
+
+}
+.section ul .pay span{
+    display: inline-block;
+    width: 100%;
+    height: 0;
+    text-align: center;
+}
+.section ul .pay>:nth-child(1){
+    margin-left: -0.20rem;
+
+}
+.section ul .pay>:nth-child(1) em,.section ul .pay>:nth-child(2) em{
+    position: relative;
+    margin-bottom: 0.1rem;
+    left: 50%;
+    margin-left: -0.4rem;
+    display:inline-block;
+    width: 0.6rem;
+    height: .43rem;
+
+}
+.section ul .pay>:nth-child(1) em{
+    background: url("../images/myself/dzf.png")no-repeat center;
+    background-size: contain;
+}
+.section ul .pay>:nth-child(2) em{
+
+    background: url("../images/myself/yzf.png")no-repeat center;
+    background-size: contain;
+}
+.section ul :nth-child(2),.section ul :nth-child(4),.section ul :nth-child(5){
+    margin-bottom: 0.3rem;
+}
+.section ul :nth-child(5) i{
+
+}
+.section ul li em{
+    display: inline-block;
+    vertical-align: -0.15rem;
+    padding-right: .22rem;
+    width: 0.45rem;
+    height: 0.45rem;
+}
+.section ul>:first-child em{
+    background: url("../images/myself/dingdan.png") no-repeat ;
+    background-size:contain;
+}
+.section ul>:nth-child(3) em{
+    background: url("../images/myself/shoucang.png") no-repeat ;
+    background-size:contain;
+}
+.section ul>:nth-child(4) em{
+    background: url("../images/myself/address.png") no-repeat ;
+    background-size:contain;
+}
+.section ul>:nth-child(5) em{
+    background: url("../images/myself/telphone.png") no-repeat ;
+    background-size:contain;
+}
+.section ul>:nth-child(6) em{
+    background: url("../images/myself/yijian.png") no-repeat ;
+    background-size:contain;
+}
+

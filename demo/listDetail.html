@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/pubCss.css">
+    <link rel="stylesheet" href="css/default-skin.css">
+    <!--<link rel="stylesheet" href="css/listDetail.css">-->
+    <link rel="stylesheet" href="css/121.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/photoswipe.css">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="js/Web_SDK_Base_v3.1.0.js"></script>
+    <script src="js/Web_SDK_NIM_v3.1.0.js"></script>
+    <script src="js/Web_SDK_Chatroom_v3.1.0.js"></script>
+    <style>
+        .scrollT{
+            position: relative;
+            overflow: hidden;
+            left: 0;
+            width: 100%;
+            top: 0;
+            bottom: 0;
+        }
+
+    </style>
+
+</head>
+<script>
+    ~function () {
+        var desW = 640;
+        var winW = document.documentElement.clientWidth;
+        if (winW > 640) return;
+        document.documentElement.style.fontSize = winW / desW * 100 + 'px';
+    }();
+</script>
+<body >
+<div class="scrollT" id="scrollT">
+
+   <div class="detailsPage">
+
+    <div class="homepage"></div>
+    <header class="header">
+        <div class="swiper-container">
+            <div class="swiper-wrapper" id="picWrap">
+                <!--<div class="swiper-slide warpBg"><img src="images/listDetail/demo_1.jpg" alt=""></div>-->
+                <!--<div class="swiper-slide warpBg"><img src="images/listDetail/demo_2.jpg" alt=""></div>-->
+
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </header>
+    <div class="tempPrice" id="tempPrice">
+        <!--预埋价-->
+    </div>
+    <!--预埋价弹窗-->
+    <div class="prePup" id="prePup">
+        <div class="cancel">确定取消预埋价？</div>
+        <div class="btn">
+            <span>确定</span>
+            <span>取消</span>
+        </div>
+    </div>
+     <div class="time" id="time">
+    <!--<div class="countDown"><span>距离结束  </span><em> 01 </em> 天 <em> 06 </em> : <em> 49 </em> : <em> 25 </em></div>--></div>
+    <div class="maskWrap" id="maskWrap">
+        <!--<div class="mask"></div>-->
+        <!--<div class="maskList">-->
+        <!--<div class="ListHead">-->
+        <!--<span>出价列表</span>-->
+        <!--<span class="btn"></span>-->
+        <!--<div class="middle">-->
+        <!--<span>出价</span>-->
+        <!--<span>出价用户</span>-->
+        <!--<span>出价时间</span>-->
+        <!--</div>-->
+        <!--</div>&ndash;&gt;-->
+        <!--<ul class="ListReal">-->
+        <!--<li>-->
+        <!--<span>￥<i>10</i></span>-->
+        <!--<span>赵钱孙李</span>-->
+        <!--<span>11-03 09:35:56</span>-->
+        <!--</li>-->
+        <!--</ul>-->
+        <!--</div>-->
+    </div>
+    <div class="banerWrap"></div>
+    <section id="section">
+        <!--<div class="one">-->
+        <!--<h3>挂号封13件(J55*4.J54*4.J68*5)1件</h3>-->
+        <!--<i></i>-->
+        <!--<em></em>-->
+        <!--</div>-->
+        <!--<div class="two">-->
+        <!--<p>所属卖方：<i>琪哥网【佣金3%:Y0.00】</i></p>-->
+        <!--<span>拍好：<em>1/35</em></span>-->
+        <!--</div>-->
+        <!--<div class="three">-->
+        <!--<span>起拍价格：￥<i>0</i><em></em><strong></strong></span>-->
+        <!--<span>即将开始</span>-->
+        <!--</div>-->
+        <!--<span class="split"></span>-->
+        <!--<span>品相：<i>原票</i></span>-->
+        <!--<div class="four">-->
+        <!--<span>挂号封13件(J55*4.J54*4.J68*5)</span>-->
+        <!--<em></em>-->
+        <!--</div>-->
+        <!--  <div class="maskWrap">
+          <div class="mask"></div>
+          <div class="maskList">
+              <div class="ListHead">
+                  <span>出价列表</span>
+                  <span class="btn"></span>
+                  <div class="middle">
+                      <span>出价</span>
+                      <span>出价用户</span>
+                      <span>出价时间</span>
+                  </div>
+              </div>-->
+        <!--<ul class="ListReal">-->
+        <!--<li>-->
+        <!--<span>￥<i>10</i></span>-->
+        <!--<span>赵钱孙李</span>-->
+        <!--<span>11-03 09:35:56</span>-->
+        <!--</li>-->
+        <!--</ul>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div class="maskDesc">-->
+        <!--<div class="mask"></div>-->
+        <!--<div class="descList">-->
+        <!--<div class="descHead">-->
+        <!--<span>出价列表出价列表出价列表出价列表]出价列表出价列表出价列表出价列表</span><span class="btnDesc"></span>-->
+        <!--</div>-->
+        <!--<div class="descDe">-->
+        <!--<span>缺陷描述 ：<i>出价列表出价列表出价列表出价列表出价列表出价列表出价列表出价列表</i></span>-->
+        <!--<span>藏品介绍 ：<i>出价列表出价列表出价列表出价列表出价列表出价列表出价列表出价列表出价列表出价列表出价列表出价列表</i></span>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+    </section>
+    <footer class="footer clear">
+        <!---->
+        <div class="introduce" id="introduce">
+            <span>拍品实时详解</span>
+            <span id="chatBtn" class="topS" >▲</span>
+            <span id="consultation" class="BODER">我要咨询</span>
+        </div>
+
+        <div class="chatRoom clear"  id="chatRoom">
+            <!--<div id="chatWrap " class="clear">-->
+            <!--<img style="" src="images/listDetail/head.png" alt="">-->
+            <!--<span>1</span>-->
+            <!--</div>-->
+        </div>
+
+        <div class="keyboard" id="keyboard">
+            <span id="keyHide"></span>
+            <input type="text" value="">
+            <span id="sendOut">发送</span>
+        </div>
+    </footer>
+    </div>
+
+</div>
+</body>
+
+</html>
+<script src="js/jquery.min.1.11.3.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/pinchzoom.js"></script>
+<script src="js/photoswipe.js"></script>
+<script src="js/photoswipe-ui-default.js"></script>
+<script src="js/fastclick.js"></script>
+<script src="js/yunToken.js"></script>
+<script src="js/listDetail.js"></script>
+<script src="js/keyboard.js"></script>
+<script src="js/chat.js"></script>
+<script src="js/utils.js"></script>
+
+<script src="js/iscroll.js"></script>
+
+<script>
+    window.onload = function () {
+        FastClick.attach(document.body);
+    };
+    $(function () {
+        $('.head,.header,#section,.maskWrap').bind('touchmove',function (e) {
+            e.preventDefault()
+        })
+    })
+
+//    var myscroll;
+//    function loaded(){
+//        setTimeout(function(){
+//            myscroll=new IScroll(".scrollT");
+//        },100 );
+//    }
+//    window.addEventListener("load",loaded,false);
+
+</script>
